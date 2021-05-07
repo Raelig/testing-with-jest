@@ -23,6 +23,7 @@ test('The stack should be empty in the beginning', async () => {
 	expect(stack).toEqual("n/a");
 });
 
+//own case
 describe('Clicking "Poppa stacken!"', () => {
   it('should open a prompt box', async () => {
     let pop = await driver.findElement(By.id('pop'));
@@ -30,7 +31,7 @@ describe('Clicking "Poppa stacken!"', () => {
     let alert = await driver.switchTo().alert();
     let result = await alert.getText();
     await alert.accept();
-    expect(result).toEqual("Nej"); // consciously wrong, "Tog bort undefined"
+    expect(result).toEqual("Tog bort undefined");
 
   });
 });

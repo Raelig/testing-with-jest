@@ -18,6 +18,7 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBe(42);
 });
 
+//own testcase
 test('peek on stack after pop, returns correct element' , () =>{
   stack.push(1);
   stack.push(2);
