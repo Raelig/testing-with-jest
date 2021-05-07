@@ -38,6 +38,6 @@ describe('Clicking "Poppa stacken!"', () => {
     let pop = await driver.findElement(By.id('pop'));
     await pop.click();
     let alert = await driver.switchTo().alert().getText();
-    expect(akert).toEqual("Nej") //consciously wrong, right text = "Tog bort undefined"
+    expect(akert).toEqual("Tog bort undefined");
   })
 })

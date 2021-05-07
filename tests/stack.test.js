@@ -21,5 +21,6 @@ test('peek on stack with two or more elements returns the top element', () => {
 test('peek on stack after pop, returns correct element' , () =>{
   stack.push(1);
   stack.push(2);
-  expect(stack.peek()).toBe(2); //returns the wrong value, is consciously wrong
+  stack.pop();
+  expect(stack.peek()).toBe(2);
 });
