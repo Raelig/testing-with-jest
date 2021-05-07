@@ -17,3 +17,9 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+
+test('peek on stack after pop, returns correct element' , () =>{
+  stack.push(1);
+  stack.push(2);
+  expect(stack.peek()).toBe(2); //returns the wrong value, is consciously wrong
+});

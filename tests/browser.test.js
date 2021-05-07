@@ -32,3 +32,12 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+describe('Clicking "Poppa stacken!"', () => {
+  it('should open a prompt box', async () => {
+    let pop = await driver.findElement(By.id('pop'));
+    await pop.click();
+    let alert = await driver.switchTo().alert().getText();
+    expect(akert).toEqual("Nej") //consciously wrong, right text = "Tog bort undefined"
+  })
+})
